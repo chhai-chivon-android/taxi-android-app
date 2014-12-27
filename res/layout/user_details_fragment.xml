@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/background2"
+    android:orientation="vertical" >
+
+    <ImageView 
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/logo_minus_text"/>
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+		android:layout_gravity="center"
+		android:padding="10dp"
+		android:background="@drawable/background_with_rounded_corners_and_fill"
+	    android:orientation="vertical" >
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:weightSum="100"
+	        android:orientation="horizontal">
+	        
+	        <ImageView 
+	            android:layout_width="0dp"
+	            android:layout_height="30dp"
+	            android:padding="5dp"
+	            android:layout_weight="10"
+	            android:layout_gravity="left"
+	            android:src="@drawable/user"/>
+            
+	        <EditText
+		        android:id="@+id/et_name"
+		        android:layout_height="match_parent"
+		        android:layout_width="0dp"
+		        android:layout_weight="80"
+		        android:hint="Name"
+		        android:textColor="@color/black"
+		        android:visibility="gone"
+		        android:textSize="18dp">
+	        	<requestFocus />
+	    	</EditText>
+	    	
+	    	<TextView
+		        android:id="@+id/tv_name"
+		        android:paddingLeft="5dp"
+		        android:layout_width="0dp"
+		        android:layout_weight="80"
+		        android:visibility="visible"
+		        android:layout_height="match_parent"
+		        android:textColor="@color/black"
+  				android:gravity="center_vertical"
+  				android:text="sahil"
+		        android:textSize="18dp" />
+	    	
+	    	<ImageView 
+	    	    android:id="@+id/edit_name"
+	    	    android:layout_width="0dp"
+	            android:layout_height="30dp"
+	            android:padding="5dp"
+	            android:layout_weight="10"
+	            android:layout_gravity="right"
+	    	    android:src="@drawable/edit_clicked"/>
+            
+	    </LinearLayout>
+	    
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="2dp"
+	        android:id="@+id/separator"
+	        android:visibility="visible"
+	        android:background="@color/silver_three"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:weightSum="100">
+	        
+	        <ImageView 
+	            android:layout_width="0dp"
+	            android:layout_height="30dp"
+	            android:padding="5dp"
+	            android:layout_weight="10"
+	            android:src="@drawable/email"/>
+	
+		    <EditText
+		        android:id="@+id/et_email"
+		        android:layout_width="0dp"
+		        android:layout_weight="80"
+		        android:layout_height="match_parent"
+		        android:visibility="gone"
+		        android:hint="Email"
+		        android:textColor="@color/black"
+		        android:inputType="textEmailAddress" />
+		    
+		   <TextView
+		        android:id="@+id/tv_email"
+		        android:visibility="visible"
+		        android:layout_width="0dp"
+		        android:layout_weight="80"
+		        android:layout_height="match_parent"
+		       	android:paddingLeft="5dp"
+		        android:textColor="@color/black"
+  				android:gravity="center_vertical"
+		        android:textSize="18dp" />		   
+		        
+	    	<ImageView 
+	    	    android:id="@+id/edit_email"
+	    	    android:layout_width="0dp"
+	            android:layout_height="30dp"
+	            android:layout_weight="10"
+	            android:padding="5dp"
+	            android:layout_gravity="right"
+	    	    android:src="@drawable/edit_clicked"/>
+	    </LinearLayout>    
+	
+	     <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="2dp"
+	        android:id="@+id/separator"
+	        android:visibility="visible"
+	        android:background="@color/silver_three"/>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp" >
+	
+	        <ImageView
+	            android:layout_width="0dp"
+	            android:layout_weight="10"
+	            android:layout_height="30dp"
+	            android:padding="5dp"
+	            android:src="@drawable/phone" />
+
+	        <TextView
+		        android:id="@+id/tv_mobile"
+		       	android:paddingLeft="5dp"
+  				android:layout_width="0dp"
+		        android:layout_weight="90"		       
+		        android:layout_height="match_parent"
+		        android:visibility="visible"
+		        android:textColor="@color/black"
+		        android:gravity="center_vertical"
+		        android:textSize="18dp" />
+	        
+	        <ImageView 
+	    	    android:id="@+id/edit_phone"
+	    	    android:layout_width="0dp"
+	    	    android:layout_weight="10"
+	            android:layout_height="30dp"
+	            android:layout_gravity="right"
+	    	    android:src="@drawable/tick"/>
+	        	
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/update_btn"
+	        android:layout_width="match_parent"
+			android:layout_gravity="center_horizontal"        
+	        android:layout_height="wrap_content"
+	        android:background="@color/bright_orange"
+	        android:layout_marginTop="10dp"
+	        android:weightSum="100"
+	        android:orientation="horizontal">
+	        
+	        <ImageView
+	            android:id="@+id/update_img"
+	            android:layout_width="0dp"
+	            android:layout_height="50dp"
+				android:layout_weight="25"
+	            android:padding="5dp"
+	            android:layout_marginLeft="0dp"
+	            android:background="@color/bright_orange"
+	            android:src="@drawable/lock" />
+	    	
+	    	<TextView
+	    	    android:id="@+id/update_text"
+	    	    android:text="UPDATE"
+	    	    android:layout_width="0dp"
+	    	    android:layout_weight="75"
+	    	    android:layout_height="match_parent"
+	    	    android:background="@color/bright_orange"
+	    	    android:gravity="center"
+	    	    android:layout_marginLeft="0dp"
+	    	    android:textSize="20dp" />
+	        
+	    </LinearLayout>
+	        
+    </LinearLayout>
+    
+</LinearLayout> 

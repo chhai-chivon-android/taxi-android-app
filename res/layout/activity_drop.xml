@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".DropFragment" >
+     
+    <RadioGroup
+	    android:id="@+id/buttongroup2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dp"
+	    android:orientation="horizontal" >
+	
+	    <at.bookworm.widget.TabControlButton
+	        android:id="@+id/option1"
+	        android:text="City Taxi"
+	        style="@style/Widget.Holo.SegmentedControl" />
+	
+	    <at.bookworm.widget.TabControlButton
+	        android:id="@+id/option2"
+	        android:text="Outstation"
+	        style="@style/Widget.Holo.SegmentedControl" />
+	    
+	     <at.bookworm.widget.TabControlButton
+	        android:id="@+id/option3"
+	        android:text="Local"
+	        style="@style/Widget.Holo.SegmentedControl" />
+	     
+	</RadioGroup>
+    
+ 	 <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+ 
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.4dp"
+        android:id="@+id/separator2"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+   
+    	 <FrameLayout
+    	     android:layout_width="match_parent"
+    	     android:layout_height="0dp"
+    	     android:layout_weight="0.90"
+    	     tools:context=".Drop" >
+
+         	<fragment
+         	    android:id="@+id/map_drop"
+         	    android:layout_width="match_parent"
+         	    android:layout_height="wrap_content"
+         	    class="com.google.android.gms.maps.MapFragment" />
+
+	          <!-- 
+	          <FrameLayout
+        android:id="@+id/map_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+	           -->
+
+         	<RelativeLayout
+         	    android:layout_width="match_parent"
+         	    android:layout_height="367dp" >
+
+         	    <ImageView
+         	        android:id="@+id/img_center"
+         	        android:layout_width="18dp"
+         	        android:layout_height="32dp"
+         	        android:layout_centerHorizontal="true"
+         	        android:layout_centerVertical="true"
+         	        android:src="@drawable/to" />
+         	   
+         	</RelativeLayout>
+
+	     </FrameLayout>
+<!-- 
+    	 <LinearLayout
+    	     android:layout_height="wrap_content"
+    	     android:layout_width="wrap_content"> -->
+      <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:id="@+id/separator2"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+     <LinearLayout
+        android:background="@drawable/background_with_shadow"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:background="@drawable/background_with_line"
+            android:layout_width="260dp"
+        	android:layout_height="wrap_content" 
+        	android:orientation="vertical">
+            
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:orientation="horizontal">
+
+	        <ImageView
+	            android:id="@+id/img_drop"
+	            android:layout_width="30dp"
+	            android:layout_height="48dp"
+	            android:layout_gravity="center_vertical"
+	            android:paddingLeft="4dp"
+	            android:paddingRight="8dp"
+	            android:src="@drawable/to" />
+	
+	        <TextView
+	            android:id="@+id/tv_drop_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"
+	            android:text="Drop:"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="25dp" />
+
+	        <ImageView
+	            style="?android:borderlessButtonStyle"
+	            android:id="@+id/img_drop_search"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_gravity="right"
+	            android:src="@drawable/pickup_search" />	        
+	    
+	        <ImageView
+	            style="?android:borderlessButtonStyle"
+	            android:id="@+id/img_drop_search"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_gravity="right"
+	            android:src="@drawable/pickup_search" />
+
+    		</LinearLayout>
+		 
+		 	<TextView
+	            android:id="@+id/tv_drop"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:text="Address"
+	            android:textAppearance="?android:attr/textAppearanceSmall" 
+	            android:paddingLeft="30dp"
+	            android:layout_marginBottom="10dp"
+	            />        
+            
+		</LinearLayout>
+        
+    	<Button
+   	        android:id="@+id/btn_date_time"
+   	        android:layout_width="match_parent"
+   	        android:layout_height="match_parent"
+   	        android:layout_alignParentBottom="true"
+   	        android:layout_alignParentLeft="true"
+   	        android:layout_margin="0dp"
+   	        android:layout_weight="1"
+   	        android:padding="0dp"
+   	        android:text="Next" />
+    	
+    </LinearLayout>
+    	     	     
+    	 <!-- </LinearLayout> -->
+    	 
+    
+</LinearLayout>

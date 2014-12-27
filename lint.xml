@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/sharedcab/batchcar/BookingSummary.java" />
+    </issue>
+    <issue id="ValidFragment">
+        <ignore path="src/com/sharedcab/batchcar/BookingSummary.java" />
+        <ignore path="src/com/sharedcab/batchcar/CustomDateTimeDialog.java" />
+        <ignore path="src/com/sharedcab/batchcar/DateTimeFragment.java" />
+        <ignore path="src/com/sharedcab/batchcar/DaysPicker.java" />
+        <ignore path="src/com/sharedcab/batchcar/MyMapFragment.java" />
+        <ignore path="src/com/sharedcab/batchcar/UserDetailsDialogFragment.java" />
+        <ignore path="src/com/sharedcab/batchcar/UserDetailsFragment.java" />
+    </issue>
+</lint>

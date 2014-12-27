@@ -1,0 +1,442 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    tools:context=".RouteFragment" 
+    android:id="@+id/main_parent">
+
+    
+     <FrameLayout
+   	     android:id="@+id/summary_container"
+   	     android:layout_width="match_parent"
+   	     android:layout_height="match_parent">
+			   	     
+		<ProgressBar 
+		    android:id="@+id/pb_summary"
+		    android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:layout_gravity="center"
+	        android:indeterminate="true"
+	        android:visibility="visible"/>
+    	
+    
+    	<LinearLayout
+    	    android:id="@+id/summary_box"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="center_vertical"
+		    android:orientation="vertical"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginLeft="10dp"
+		    android:visibility="invisible">
+		    
+		     <RelativeLayout
+		         android:layout_width="match_parent"
+		         android:layout_height="32dp"
+		         android:layout_gravity="right"
+		         android:orientation="horizontal" >
+		         
+			    <ImageView
+			        android:id="@+id/tab_image"
+			        android:layout_width="100dp"
+			        android:layout_height="30dp"
+			        android:layout_alignParentBottom="true"
+			        android:layout_alignParentLeft="true"
+			        android:layout_marginLeft="2dp"
+			        android:paddingLeft="3dp"
+			        android:alpha="1.0"
+			        android:src="@drawable/silver_two_tab" />
+			
+			    <TextView
+			        android:id="@+id/tv_tab"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignRight="@+id/tab_image"
+			        android:layout_alignTop="@+id/tab_image"
+			        android:layout_marginTop="7dp"
+			        android:layout_marginRight="16dp"
+			        android:gravity="center"
+			        android:text="Booking"
+			        android:textStyle="bold"
+			        android:textSize="12dp"/>
+		    
+	        </RelativeLayout>
+		     
+		    <LinearLayout 
+			    android:id="@+id/first_child"
+			    android:padding="10dp"
+			    android:background="@drawable/background_with_rounded_corners"
+			    android:orientation="vertical"
+			    android:layout_gravity="center_vertical"
+			    android:layout_height="wrap_content"
+			    android:layout_width="match_parent">
+		    
+		     <LinearLayout
+		   	        android:layout_width="match_parent"
+		   	        android:layout_height="wrap_content"
+		   	        android:showDividers="middle"
+		   	        android:id="@+id/second_child"
+		   	        android:background="@color/silver_four"
+		        	android:divider="?android:dividerHorizontal"
+		   	        android:orientation="vertical" >
+		
+		   	        <LinearLayout
+		   	            android:id="@+id/from_layout"
+			        	android:layout_width="match_parent"
+			        	android:background="@color/silver_four"
+			        	android:layout_height="wrap_content"
+			        	android:orientation="horizontal">
+		
+				        <ImageView
+				            android:id="@+id/img_from"
+				            android:layout_width="40dp"
+				            android:layout_height="40dp"
+				            android:layout_gravity="center_vertical"
+				            android:paddingLeft="0dp"
+				            android:paddingRight="0dp"
+				            android:src="@drawable/orange_gen_marker" />
+				       
+					 	<TextView
+						     android:id="@+id/tv_pickup"
+						     android:layout_width="0dp"
+						     android:layout_height="match_parent"
+						     android:gravity="center_vertical"
+						     android:textSize="14dp"
+		   				     android:layout_weight="0.9"
+		   				     android:background="@color/silver_four"
+						     android:singleLine="true" />
+					</LinearLayout>
+			            
+		   	        <View
+			      android:layout_width="fill_parent"
+			      android:layout_height="10dp"
+			      android:id="@+id/separator6"
+			      android:visibility="visible"
+			      android:background="@color/silver_two"/>
+		   	        
+			    	<LinearLayout
+			    	    android:id="@+id/to_layout"
+			        	android:layout_width="match_parent"
+			        	android:layout_height="wrap_content"
+			        	android:background="@color/silver_four"
+			        	android:orientation="horizontal">
+			
+				        <ImageView
+				            android:id="@+id/img_to"
+				            android:layout_width="40dp"
+				            android:layout_height="40dp"
+				            android:layout_gravity="center_vertical"
+				            android:paddingLeft="0dp"
+				            android:paddingRight="0dp"
+				            android:src="@drawable/orange_gen_marker" />
+				       
+					 	<TextView
+						     android:id="@+id/tv_drop"
+						     android:layout_width="0dp"
+						     android:layout_height="match_parent"
+		   				     android:background="@color/silver_four"
+		   					 android:gravity="center_vertical"
+						     android:textSize="14dp"
+						     android:layout_weight="0.9"
+						     android:singleLine="true" />
+					</LinearLayout>
+		    	</LinearLayout>
+		    	
+				 <View
+				      android:layout_width="fill_parent"
+				      android:layout_height="10dp"
+				      android:id="@+id/separator2"
+				      android:visibility="visible"
+				      android:background="@color/silver_two"/>		     
+				 
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:showDividers="middle"
+		        android:divider="?android:dividerHorizontal">
+		        	
+		         <LinearLayout
+		            android:layout_marginTop="0dp"
+		            android:layout_marginLeft="0dp"
+		            android:layout_marginRight="0dp"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="wrap_content" 
+		        	android:orientation="horizontal">
+		
+				<LinearLayout 
+				    android:id="@+id/removable_box"
+				    android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:weightSum="100">
+				    
+				    
+					<LinearLayout 
+					    android:id="@+id/car_vendor_box"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="48"			    
+						android:background="@color/silver_four"
+					    android:orientation="horizontal">
+					    
+					    <ImageView 
+					        android:id="@+id/car_vendor_img"
+					        android:padding="5dp"
+					        android:layout_height="40dp"
+					        android:layout_width="50dp"
+					     	android:gravity="bottom|center"
+					  		android:src="@drawable/cabicon"
+					    />
+					    
+					    <TextView 
+					        android:id="@+id/car_vendor_text"
+					        android:layout_width="match_parent"
+							android:layout_height="match_parent"
+						    android:text="Compact"
+						    android:gravity="left|center_vertical"
+						    android:textAlignment="center"
+						    android:textColor="@color/black"
+						    android:textSize="14dp"/>
+					    
+					</LinearLayout>
+					
+					  <LinearLayout 
+		                 	android:layout_width="0dp"
+		                 	android:layout_weight="4"
+							android:layout_height="match_parent"
+		                 	android:orientation="horizontal">
+		           
+		                 <View
+					      android:layout_height="match_parent"
+					      android:layout_width="match_parent"
+					      android:id="@+id/separator7"
+					      android:visibility="visible"
+					      android:background="@color/silver_two"/>
+			             
+		                 
+		             </LinearLayout>
+				    
+		             <LinearLayout
+		                 android:id="@+id/details_box"
+		                 android:layout_width="0dp"
+		                 android:layout_weight="48"
+		                 android:layout_height="match_parent"
+		                 android:background="@color/silver_four"
+		                 android:orientation="horizontal"
+		                 android:weightSum="1.0" >
+		                 
+			             <ImageView
+			                 android:id="@+id/img_cal"
+			                 android:layout_width="30dp"
+			                 android:layout_height="30dp"
+			                 android:layout_weight="0.2"
+			                 android:layout_marginTop="10dp"
+			                 android:layout_marginBottom="10dp"
+			                 android:background="@color/silver_four"
+			                 android:layout_gravity="center"
+			                 android:visibility="visible"
+			                 android:src="@drawable/orange_cal" />
+			         
+			             <LinearLayout
+			                 android:layout_width="0dp"
+			                 android:layout_height="match_parent"
+			                 android:layout_weight="0.8"
+			                 android:gravity="bottom|top"
+			                 android:orientation="vertical" >
+
+			                <TextView  
+				                android:id="@+id/tv_pdct"
+					            android:layout_width="match_parent"
+					            android:layout_height="22dp"
+					            android:gravity="center_vertical"
+				                android:visibility="visible"
+				                android:textSize="14dp"
+					            android:text="City Taxi"
+					            />
+
+				             <TextView  
+				                android:id="@+id/tv_details"
+					            android:layout_width="match_parent"
+					            android:layout_height="wrap_content"
+					            android:gravity="left|bottom"
+				                android:visibility="visible"
+					            android:text="28 Feb 12:00 PM"
+					            android:textSize="10dp"/>
+			             
+			             </LinearLayout>
+			             			             
+		             </LinearLayout>
+				    
+				</LinearLayout>        
+				</LinearLayout>
+		    
+		    <View
+				android:layout_width="fill_parent"
+				android:layout_height="10dp"
+				android:id="@+id/separator5"
+				android:visibility="visible"
+				android:background="@color/silver_two"/>
+		    
+		    <LinearLayout
+		   	    android:layout_width="match_parent"
+		   	    android:layout_height="wrap_content"
+		   	    android:orientation="horizontal" >
+		
+		         <LinearLayout
+		             android:layout_width="match_parent"
+		             android:weightSum="100"
+		             android:id="@+id/button_box"
+		             android:layout_height="wrap_content"
+		             android:background="@color/silver_four"
+		             android:orientation="horizontal" >
+		
+		             <LinearLayout
+		                 android:id="@+id/cancel_btn"
+		                 android:layout_width="0dp"
+		                 android:layout_height="match_parent"
+		                 android:layout_weight="48"
+		                 android:orientation="horizontal"
+		                 android:background="@drawable/button_with_border"
+		                 android:weightSum="1.0" >
+		                 
+			                  <ImageView
+				                 android:id="@+id/img_time_start"
+				                 android:layout_width="30dp"
+				                 android:layout_height="30dp"
+				                 android:layout_weight="0.2"
+				                 android:layout_gravity="center"
+				                 android:layout_marginTop="10dp"
+				                 android:layout_marginBottom="10dp"
+				                 android:src="@drawable/cancel" />
+				             
+				             <TextView  
+				                android:id="@+id/tv_time_start"
+				                android:layout_weight="0.8"
+					            android:layout_width="0dp"
+					            android:layout_height="wrap_content"
+					            android:layout_gravity="center"
+					            android:gravity="left"
+					            android:text="CANCEL"
+					            android:textAppearance="?android:attr/textAppearanceSmall"/>
+		                       
+						</LinearLayout>
+			                 
+		             <LinearLayout 
+		                 	android:layout_width="0dp"
+		                 	android:layout_weight="4"
+							android:layout_height="match_parent"
+		                 	android:orientation="horizontal">
+		           
+		                 <View
+					      android:layout_height="match_parent"
+					      android:layout_width="match_parent"
+					      android:id="@+id/separator7"
+					      android:visibility="visible"
+					      android:background="@color/silver_two"/>
+		                 
+		             </LinearLayout>
+		             
+		             <LinearLayout 
+		                 android:orientation="horizontal"
+		                 android:layout_width="0dp"
+			             android:id="@+id/time_end_box"
+		                 android:layout_height="wrap_content"
+		                 android:weightSum="1.0"
+		                 android:background="@drawable/button_with_border"
+		                 android:layout_weight="48">
+		       			           
+		                  <ImageView
+			                 android:id="@+id/img_share"
+			                 android:layout_width="30dp"
+			                 android:layout_height="30dp"
+			                 android:layout_weight="0.2"
+			                 android:layout_gravity="center"
+			                 android:layout_marginTop="10dp"
+			                 android:layout_marginBottom="10dp"
+			                 android:visibility="visible"
+			                 android:src="@drawable/fb" />
+		                 
+			             <TextView  
+			                android:id="@+id/tv_time_end"
+				            android:layout_width="0dp"
+				            android:layout_height="wrap_content"
+				            android:layout_weight="0.8"
+				            android:layout_gravity="center"
+				            android:gravity="left"
+			                android:visibility="visible"
+				            android:text="SHARE"
+				            android:textAppearance="?android:attr/textAppearanceSmall"/>
+			             
+		             </LinearLayout>
+		             
+		       	</LinearLayout>
+		
+		     	</LinearLayout>
+		   
+		    <View
+			      android:layout_width="fill_parent"
+			      android:layout_height="10dp"
+			      android:id="@+id/separator9"
+			      android:visibility="visible"
+			      android:background="@color/silver_two"/>
+			                 
+		   	    <LinearLayout 
+			   	    android:id="@+id/btn_call"
+		   	        android:layout_width="match_parent"
+		   	        android:layout_height="50dp"
+		   	        android:weightSum="1.0"
+		   	        android:background="@color/bright_orange"
+		   	        android:orientation="horizontal">
+		   	        
+		   	      <FrameLayout
+			   	     android:id="@+id/status_img_container"
+			   	     android:layout_width="0dp"
+			   	     android:layout_weight="0.3"
+			   	     android:layout_height="match_parent"
+			   	     android:background="@color/bright_orange">
+			   	     
+						<ProgressBar 
+						    android:id="@+id/pb_status"
+						    android:layout_width="30dp"
+					        android:layout_height="30dp"
+					        android:layout_gravity="center"
+					        android:indeterminate="true"
+					        android:visibility="invisible"
+					        android:background="@color/bright_orange"/>
+			     	
+				     	<ImageView 
+			   	            android:id="@+id/call_img"
+			   	            android:src="@drawable/exclamation"
+			   	            android:layout_width="match_parent"
+			   	            android:layout_height="40dp"
+			   	            android:layout_gravity="center"
+			                android:visibility="visible"
+			   	            android:layout_marginLeft="20dp"/>
+			   	        
+			     	</FrameLayout>
+		   	        
+		   	        <TextView 
+		   	            android:id="@+id/call_driver"
+			            android:layout_width="0dp"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="0.7"
+			            android:layout_gravity="center"
+			            android:gravity="left|center_vertical"
+		                android:textSize="16dp"
+			            android:text="CALL DRIVER"/>
+		   	        
+		   	    </LinearLayout>
+		    
+		    </LinearLayout>
+		    
+		    </LinearLayout>
+		   
+		</LinearLayout>
+		
+   </FrameLayout>
+    	
+</LinearLayout>

@@ -1,0 +1,106 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!--  <style name="AppBaseTheme" parent="android:Theme.Holo">
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+    </style>-->
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <color name="black">#000000</color>
+    <color name="green">#00FF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#585858</color>
+    <color name="better_grey">#808080</color>
+    <color name="silver_two">#DEDEDE</color>
+    <color name="silver_three">#C9C9C9</color>
+    <color name="silver_four">#FFF3F3F3</color>
+    <color name="silver">#c0c0c0</color>
+    <color name="bright_orange">#ffbb33</color>
+    <color name="holo_blue_light">#33b5e5 </color>
+	<color name="holo_blue_dark">#0099cc </color> 
+	<color name="holo_blue_bright"> #00ddff </color>
+	<color name="safe_mode_text">#80ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="background_dark">#ff000000</color>
+    <color name="background_light">#ffffffff</color>
+    <color name="bright_foreground_dark">@android:color/background_light</color>
+    <color name="bright_foreground_light">@android:color/background_dark</color>
+    <color name="bright_foreground_dark_disabled">#80ffffff</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+    <color name="dim_foreground_dark">#bebebe</color>
+    <color name="dim_foreground_dark_disabled">#80bebebe</color>
+    <color name="dim_foreground_dark_inverse">#323232</color>
+    <color name="dim_foreground_dark_inverse_disabled">#80323232</color>
+    <color name="hint_foreground_dark">#808080</color>
+    <color name="dim_foreground_light">#323232</color>
+    <color name="dim_foreground_light_disabled">#80323232</color>
+    <color name="dim_foreground_light_inverse">#bebebe</color>
+    <color name="dim_foreground_light_inverse_disabled">#80bebebe</color>
+    <color name="hint_foreground_light">#808080</color>
+    <color name="highlighted_text_dark">#9983CC39</color>
+    <color name="highlighted_text_light">#9983CC39</color>
+    <color name="link_text_dark">#5c5cff</color>
+    <color name="red">#ff0000</color>
+    <color name="link_text_light">#0000ee</color>
+    <color name="suggestion_highlight_text">#177bbd</color>
+        
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#000000</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+  <!--    <style name="randomtheme" parent="@android:style/Theme.Holo.Light">
+	    <item name="segmentedControlButtonStyle">@style/Widget.Holo.SegmentedControl</item>
+	    <item name="tabControlButtonStyle">@style/Widget.Holo.TabControl</item>
+	</style>
+  -->
+    <!-- 
+    <style name="customtheme" parent="@android:style/Theme.Light">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+    
+    
+    
+    <style name="SpinnerItem">
+        <item name="android:textColor">#993399</item>
+        <item name="android:background">@drawable/spinner_rect</item>
+    </style>
+    <style name="SpinnerDropDownItem">
+        <item name="android:textColor">#993399</item>
+        <item name="android:background">@drawable/spinner_rect</item>
+    </style>
+     -->
+     
+     <style name="MyToggle">
+	    <item name="android:background">@drawable/btn_toggle_bg</item>
+	    <item name="android:textOn">"Today"</item>
+	    <item name="android:textOff">"Tomorrow"</item>
+	    <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+	</style>
+     
+	
+	
+     
+</resources>

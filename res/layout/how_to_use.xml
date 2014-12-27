@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".PrimerFragment" >
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/primer3"/>
+
+    <ImageView
+        android:id="@+id/got_it"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="116dp"
+        android:src="@drawable/logo_minus_text" />
+     
+     <ProgressBar 
+		android:id="@+id/spin_1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+        android:layout_marginBottom="116dp"
+        android:visibility="gone"
+        android:indeterminate="true"/>
+     
+</RelativeLayout>

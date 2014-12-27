@@ -1,0 +1,136 @@
+{"rates":
+	{"city_taxi":
+		[
+			{
+				"vendor": "Meru",
+				"vendor_key": "meru",
+				"rpkm": 21.0,
+				"wait_charge": 2.0,
+				"min_fare": 150,
+				"icon_key": "sedan",
+				"book_charge": 30.0,
+				"first_km": 25.0
+			},
+			{
+				"vendor": "TabCab",
+				"vendor_key": "ytaxi",
+				"rpkm": 21.0,
+				"wait_charge": 2.0,
+				"min_fare": 150,
+				"icon_key": "sedan",
+				"book_charge": 30.0,
+				"first_km": 25.0
+			},
+			{
+				"vendor": "Coolcab",
+				"vendor_key": "ytaxi",
+				"rpkm": 15.5,
+				"wait_charge": 1.0,
+				"min_fare": 300,
+				"icon_key": "compact",
+				"book_charge": 0.0,
+				"first_km": 15.5
+			},
+			{
+				"vendor": "Any",
+				"vendor_key": "all",
+				"rpkm": 21.0,
+				"wait_charge": 2.0,
+				"min_fare": 150,
+				"icon_key": "any",
+				"book_charge": 30.0,
+				"first_km": 25.0
+			}
+		],
+	"outstation":
+		[
+			{
+				"car_type": "Compact",
+				"rpkm": 8.0,
+				"driver_allowance": 200,
+				"min_kmpd": 250,
+				"toll_policy": "paid by customer",
+				"icon_key": "compact",
+				"book_charge": 0.0,
+				"vicinity": 5.0
+			},
+			{
+				"car_type": "Sedan",
+				"rpkm": 10.0,
+				"driver_allowance": 200,
+				"min_kmpd": 250,
+				"toll_policy": "paid by customer",
+				"icon_key": "sedan",
+				"book_charge": 0.0,
+				"vicinity": 5.0
+			},
+			{
+				"car_type": "Innova",
+				"rpkm": 12.0,
+				"driver_allowance": 250,
+				"min_kmpd": 250,
+				"toll_policy": "paid by customer",
+				"icon_key": "innova",
+				"book_charge": 0.0,
+				"vicinity": 5.0
+			},
+			{
+				"car_type": "Tavera",
+				"rpkm": 9.5,
+				"driver_allowance": 250,
+				"min_kmpd": 250,
+				"toll_policy": "paid by customer",
+				"icon_key": "tavera",
+				"book_charge": 0.0,
+				"vicinity": 5.0
+			}
+		],
+		"local":
+		[
+			{
+				"car_type": "Compact",
+				"4x40": 700,
+				"8x80": 1200,
+				"add_km": 8.5,
+				"add_hour": 75,
+				"toll_policy": "paid by customer",
+				"icon_key": "compact",
+				"book_charge": 0.0,
+				"vicinity": 5.0
+			},
+			{
+				"car_type": "Sedan",
+				"4x40": 900,
+				"8x80": 1500,
+				"add_km": 10.0,
+				"add_hour": 80,
+				"toll_policy": "paid by customer",
+				"icon_key": "sedan",
+				"book_charge": 0.0,
+				"vicinity": 5.0
+			},
+			{
+				"car_type": "Innova",
+				"4x40": 1200,
+				"8x80": 2000,
+				"add_km": 12.0,
+				"add_hour": 100,
+				"toll_policy": "paid by customer",
+				"icon_key": "innova",
+				"book_charge": 0.0,
+				"vicinity": 5.0
+			},
+			{
+				"car_type": "Tavera",
+				"4x40": 1000,
+				"8x80": 1800,
+				"add_km": 10.0,
+				"add_hour": 80,
+				"toll_policy": "paid by customer",
+				"icon_key": "tavera",
+				"book_charge": 0.0,
+				"vicinity": 5.0
+			}
+		]
+	}
+}
